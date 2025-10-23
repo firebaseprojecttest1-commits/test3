@@ -1,1 +1,56 @@
-HELLO MUNDO
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Contact Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="db.js"></script>
+</head>
+
+<body>
+  <!-- 🌸 Navbar -->
+  <nav class="navbar">
+    <div class="logo">My Website</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🏠 Home Section -->
+  <section class="home">
+    <h1>Welcome to My Website</h1>
+    <p>Feel free to reach out using the contact form below.</p>
+  </section>
+
+  <!-- ✉️ Contact Form Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <div class="alert">Your message was sent successfully!</div>
+
+        <div class="inputBox">
+          <input type="text" id="name" placeholder="Your name..." autocomplete="name" />
+        </div>
+
+        <div class="inputBox">
+          <input type="email" id="emailid" placeholder="Your email..." autocomplete="email" />
+        </div>
+
+        <div class="inputBox">
+          <textarea id="msgContent" cols="30" rows="10" placeholder="Message" autocomplete="off"></textarea>
+        </div>
+
+        <div class="inputBox">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
